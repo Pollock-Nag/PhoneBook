@@ -8,7 +8,7 @@ function createContact() {
     user['PhoneNumber'] = document.getElementById("phonenumber").value;
     user["Address"] = document.getElementById("address").value;
 
-    //validate input
+    //validate input and put object in addressBook
     let isValidInfo = validation(user)
     if (isValidInfo) { showContacts(addressBook) }
     else { showError() }
