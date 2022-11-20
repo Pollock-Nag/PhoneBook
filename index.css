@@ -1,7 +1,15 @@
 #body {
     background-image: linear-gradient(to right, #EEEEEE, #FAF8F9, #FFFFFF);
-    padding-top: 2%;
+    padding: 1%;
+    color: #29465B;
 
 
 
+}
+
+.heading {
+    text-align: center;
+    padding: 1%;
+    color: #4863A0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
