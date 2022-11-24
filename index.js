@@ -10,7 +10,10 @@ function createContact() {
 
     //validate input and put object in addressBook
     let isValidInfo = validation(user)
-    if (isValidInfo) { showContacts(addressBook) }
+    if (isValidInfo) {
+        showContacts(addressBook)
+        document.getElementById("inputForm").reset();
+    }
     else { showError() }
 
 }
@@ -36,7 +39,7 @@ function removeContact() {
 function searchContact() {
     let name = document.getElementById("search_name").value;
     searched_from_addressBook = addressBook.filter(function (contact) {
-        return contact["Name"] == name
+        return contact["Name"].toLowerCase() == name.toLowerCase() || contact["Surname"].toLowerCase() == name.toLowerCase()
     });
     showContacts(searched_from_addressBook)
     //showSearchedUsers(searched_from_addressBook)

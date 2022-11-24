@@ -8,4 +8,9 @@
 6. Use 3 separate files: one for CSS, one for HTML, and one for JavaScript.
 7. Use jQuery to interact with the DOM.
 
+Added More Features:
+Search should be case insensitive
+Search should search both first and last name
+Form should reset after inserting contact
+
 # Stacks : HTML, CSS, JS, JQuery, Bootstrap
